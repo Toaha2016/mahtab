@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mahtab Monjur</title>
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- DaisyUI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.11/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="Font.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+
+
+<!-- NAV BAR -->
+<div class="navbar bg-base-100">
+    <div class="navbar-start">
+      <div class="dropdown">
+        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-5 w-5"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h8m-8 6h16" />
+          </svg>
+        </div>
+        <ul
+          tabindex="0"
+          class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+          <li><a href="index.html" id="home-tab">Home</a></li>
+          <li><a href="bba_du.html" id="bba-tab">BBA-DU</a></li>
+          <li><a href="jobs.html" id="jobs-tab">Jobs</a></li>
+          <li><a href="care.html" id="care-tab">Mahtab's Care</a></li>
+        </ul>
+      </div>
+      <a class="btn btn-ghost text-xl">Mahtab Monjur</a>
+    </div>
+    <div class="navbar-center hidden lg:flex">
+      <ul class="menu menu-horizontal px-1">
+        <li><a href="index.html" id="home-tab">Home</a></li>
+        <li><a href="bba_du.html" id="bba-tab">BBA-DU</a></li>
+        <li><a href="jobs.html" id="jobs-tab">Jobs</a></li>
+        <li><a href="care.html" id="care-tab">Mahtab's Care</a></li>
+      </ul>
+    </div>
+    <div class="navbar-end">
+        <a href="https://wa.me/8801986444768?text=Hello!%20I%20would%20like%20to%20book%20an%20appointment." 
+        target="_blank" 
+        class="btn bg-blue-500 text-white flex items-center space-x-2">
+       <i class="fa-regular fa-calendar-check"></i>
+       <span>Book Appointment</span>
+     </a>
+    </div>
+  </div>
+
+<!-- Landing Page -->
+
+<div
+  class="hero min-h-screen"
+  style="background-image: url(images/job\ bg.jpg);">
+  <div class="hero-overlay bg-opacity-60"></div>
+  <div class="hero-content text-neutral-content text-center">
+    <div class="max-w-md w-3/4 mx-auto">
+      <h1 class="mb-5 text-5xl font-bold mx-auto">Organization I have Worked With
+    </h1>
+      <p class="mb-5">
+        With a proven track record of collaboration with 30+ organizations, I bring extensive expertise in delivering impactful results across various sectors. My experience spans diverse industries, allowing me to effectively contribute to growth, innovation, and strategic development. Whether working on skill development programs, leading projects, or driving team success, I am committed to creating meaningful outcomes for every organization I work with.
+      </p>
+      <button class="btn btn-primary"><i class="fa-solid fa-arrow-down"></i>Scroll Down</button>
+    </div>
+  </div>
+</div>
+
+<!-- CONTAINER XYZ -->
+<div class="mt-10 gap-24 grid-cols-1 grid items-center mx-auto mb-16">
+    <!-- Container 01-->
+<div class="card bg-base-100 w-5/6 lg:w-96 shadow-xl mx-auto">
+    <figure>
+      <img
+        src="images/Worked with.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Click to Show!</h2>
+      <p>See the organizations I have worked with.</p>
+      <div class="card-actions justify-end">
+        <!-- You can open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_3.showModal()">See Picture!</button>
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Organizations I've Worked With !</h3>
+    <img src="images/Worked with.png" alt="">
+  </div>
+</dialog>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Container 02 -->
+  <div class="card bg-base-100 w-5/6 lg:w-96 shadow-xl mx-auto">
+    <figure>
+      <img
+        src="images/Worked with2.png"
+        alt="Shoes" />
+    </figure>
+    <div class="card-body">
+      <h2 class="card-title">Click to Show!</h2>
+      <p>See the organizations I have worked with.</p>
+      <div class="card-actions justify-end">
+        <!-- You can open the modal using ID.showModal() method -->
+<button class="btn" onclick="my_modal_2.showModal()">See Picture!</button>
+<dialog id="my_modal_2" class="modal">
+  <div class="modal-box">
+    <form method="dialog">
+      <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">✕</button>
+    </form>
+    <h3 class="text-lg font-bold">Organizations I've Worked With !</h3>
+    <br>
+    <img src="images/Worked with2.png" alt="">
+  </div>
+</dialog>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+    
+</body>
+</html>
